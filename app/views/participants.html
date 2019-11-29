@@ -1,0 +1,81 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Understanding participants in the trust framework
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Understanding participants in the trust framework</h1>
+    <p>Different organisations will do different things in the 'trust framework'. This guidance explains what each organisation (also known as a 'participant') must do.</p>
+
+    <h2 class="govuk-heading-l">Services</h2>
+    <p class="govuk-body">Services let users do things online. A service might need to make sure a user is who they say they are before giving them access to it. To do this, the service can ask identity providers to check and prove a user's identity. They will need to pay a fee to do this.</p>
+    <p>Services might also need information about a user to check if a user is eligible to use it. A service can do this by requesting attributes or information about attributes from an attribute provider. A service must have the user's consent before they do this. They will also need to pay a fee for this.</p>
+
+    <h2 class="govuk-heading-l">Identity providers</h2>
+    <p class="govuk-body">Identity providers let users create a digital identity account to access any services that are part of the trust framework. Identity providers will need to check and prove a user’s identity. To do this, identity providers must follow the guidance on <a href="https://www.gov.uk/government/publications/identity-proofing-and-verification-of-an-individual/identity-proofing-and-verification-of-an-individual">how to prove and verify someone's identity</a>.</p>
+
+    <p>Identity providers will also need some information about a user to check their identity. An identity provider can:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>ask the user for this information and check it against information held by an attribute provider</li>
+      <li>check any information they already have with an <a href="https://www.gov.uk/government/publications/identity-proofing-and-verification-of-an-individual/identity-proofing-and-verification-of-an-individual#authoritative-sources">authoritative source</a> (this could be an attribute provider)</li>
+      <li>check if an attribute provider has this information already</li>
+    </ul>
+
+    <p>Identity providers must have the user's consent before they do this.</p>
+
+    <p>Identity providers will also need to make sure users have a way to securely sign in to their account. To do this, identity providers must follow the guidance about <a href="https://www.gov.uk/government/publications/authentication-credentials-for-online-government-services">using credentials to protect an online service</a>.</p>
+
+    <p>Identity providers are also responsible for managing users' personal data in a way that follows the <a href="http://www.legislation.gov.uk/ukpga/2018/12/contents/enacted">Data Protection Act 2018</a> and the <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/">General Data Protection Regulation</a> (GDPR).</p>
+    <p>Identity providers must always follow <a href="https://docs.google.com/document/d/1aetKaLLM5LuS4ZoborPxiHlBRmxGm4Vrh1wvEaSVHBU/edit?ts=5dc5a4c2#heading=h.na57tkwuh28w">the rules of the trust framework</a>. If they do not follow these rules, they will not be able to be part of the trust framework. </p>
+
+    <h2 class="govuk-heading-l">Attribute providers</h2>
+    <p>Attribute providers collect or create pieces of information that describe something about a person, business or thing (such as a computer or device). Attribute providers can share their attributes with identity providers and services. To do this, attribute providers must follow the guidance on <a href="https://docs.google.com/document/d/1_WgXvCBcxUm8dIeRpOBLtqNsJXq5OHLBtSoXzTKrqHk/edit#heading=h.u33ppce7icbw">sharing and maintaining attributes</a>.</p>
+    <p>Attribute providers will need to describe the quality of the attributes they keep. Services and identity providers will use this information to choose which attribute provider they request attributes from. To do this, attribute providers must follow the guidance on how to describe attributes. </p>
+
+    <h2 class="govuk-heading-l">Brokers</h2>
+    <p>Brokers connect services to identity providers and attribute providers.</p>
+    <p>To protect users' privacy, brokers must make sure that: </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>the service cannot see which identity provider a user chooses</li>
+      <li>the identity provider cannot see which service the user is trying to use</li>
+    </ul>
+    <p>Any fees that are paid by the service will be collected by the broker and passed on to the identity and attribute providers.</p>
+
+    <h2 class="govuk-heading-l">eIDAS Node Provider</h2>
+    <p>The UK Proxy Node and Connector Node connects the trust framework participants to the electronic identification, authentication and trust services (eIDAS) framework.</p>  
+    <p>In the future, there might be more components like this that can connect the trust framework to other frameworks.</p>
+
+    <h2 class="govuk-heading-l">How the participants work together</h2>
+    <p>A service must connect to a broker. When they've done this, the broker can connect them to: </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>one or more identity providers, if the service needs a user to create a digital identity</li>
+      <li>all identity providers, if the service needs to let users sign in with their digital identity</li>
+      <li>an attribute provider, if the service needs to request attributes </li>
+    </ul>
+    <p>Which broker a service team chooses depends on: </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>how much the broker will charge to get information for the service</li>
+      <li>which attribute providers the broker has relationships with</li>
+    </ul>
+    <p>Every broker will be connected to every identity provider on the trust framework. If the identity provider no longer follows the rules of the trust framework, the broker must end the connection.</p>
+    <p>A broker can choose which attribute providers it connects to. An attribute provider can connect to multiple brokers.</p>
+
+
+
+
+
+
+
+
+
+  </div>
+      
+</div>
+
+{% endblock %}

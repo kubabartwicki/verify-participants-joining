@@ -41,28 +41,43 @@
   {% include "includes/cookie-banner.html" %}
   {# Set serviceName in config.js. #}
   {{ govukHeader({
-    homepageUrl: "introduction-trust-framework",
+    homepageUrl: "introduction",
     serviceName: serviceName,
-    serviceUrl: "introduction-trust-framework",
+    serviceUrl: "introduction",
     containerClasses: "govuk-width-container",
     navigation: [
         {
-          href: "/introduction-trust-framework",
+          href: "/introduction",
           text: "Introduction"
         },
         {
-          href: "/join-trust-framework",
-          text: "Join and participate"
+          href: "/participants",
+          text: "Participants"
         },
         {
-          href: "#",
-          text: "Support"
+          href: "/join",
+          text: "Join"
         }
     ]
   }) }}
 {% endblock %}
 
+{% block beforeContent %}
+
+  {% from 'govuk/components/phase-banner/macro.njk' import govukPhaseBanner %}
+
+  {{ govukPhaseBanner({
+    tag: {
+      text: "Prototype"
+    },
+    html: 'This is a not a working service – your feedback can help improve it.'
+  }) }}
+
+{% endblock %}
+
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
+
+
 
 {% if useAutoStoreData %}
   {% block footer %}
@@ -82,6 +97,8 @@
     }) }}
   {% endblock %}
 {% endif %}
+
+
 
 {% block bodyEnd %}
   {% block scripts %}
