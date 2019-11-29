@@ -1,0 +1,122 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+// Patterns that aren't in Frontend
+@import "patterns/task-list";
+@import "patterns/related-items";
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
+.header__title {
+	font-weight: 400;
+	text-transform: none;
+	font-size: 18px;
+	line-height: 1.2;
+	display: block;
+}
+.app-task-list__section-number {
+	display: inline;
+}
+.app-task-list {
+	margin-top: 50px;
+}
+.app-task-list > li {
+	margin-bottom: 50px;
+}
+.govuk-full-width-override {
+	background: #005ea5;
+	position: relative;
+  	z-index: 1;
+  	margin-top: -40px;
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-left: 15px;
+	padding-right: 15px;
+  	p, li, h1 {
+		color: govuk-colour("white");
+	}
+	.govuk-grid-row {
+		padding-top: 50px;
+  		padding-bottom: 30px;
+	}
+}
+blockquote {
+	border-left-width: 10px;
+	border-left-style: solid;
+	border-color: #bfc1c3;
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-left: 0;
+	*:last-child {
+		margin-bottom: 0;
+	}
+}
+.govuk-header__content .govuk-header__link--service-name {
+	display: none;
+}
+@include govuk-media-query($from: tablet) {
+	.govuk-header__logotype,
+	.header__title {
+		float: left;
+	}
+	.header__title {
+		font-size: 24px;
+		line-height: 1;
+		padding-top: 4px;
+	}
+	.govuk-header__logotype {
+		margin-right: 14px;
+	}
+    .govuk-header__content {
+    	display: block;
+		clear: none;
+		padding-top: 2px;
+		border-top: none;
+		float: right;
+	}
+    .govuk-header__content a:link,
+    .govuk-header__content a:visited {
+		padding: 0;
+	}
+    .govuk-header__content ul {
+        border-top: none;
+        padding: 0;
+    }
+    .govuk-header__content li {
+        float: left;
+        margin: 0 0 0 15px;
+    }
+	.govuk-full-width-override {
+		margin-top: -60px;
+		margin-left: -30px;
+  		margin-right: -30px;
+  		padding-left: 30px;
+  		padding-right: 30px;
+  	}
+}
+@include govuk-media-query($from: desktop) {
+	.govuk-header__logo, .govuk-header__content {
+		width: 50%;
+	}
+	.govuk-header__content {
+		text-align: right;
+	}
+	.govuk-header__navigation {
+		margin-bottom: 0;
+		float: right;
+	}
+}
+@media (min-width: 1020px) {
+	.govuk-full-width-override {
+		margin-left: calc(-100vw / 2 + 960px / 2);
+  		margin-right: calc(-100vw / 2 + 960px / 2);
+  		.govuk-grid-row {
+  			max-width: 990px;
+  			margin-left: auto;
+  			margin-right: auto;
+  		}
+	}
+}
