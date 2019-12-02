@@ -31,6 +31,17 @@
 
 {% block head %}
   {% include "includes/head.html" %}
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153707455-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-153707455-1');
+  </script>
+
 {% endblock %}
 
 {% block pageTitle %}
@@ -60,9 +71,12 @@
         }
     ]
   }) }}
+
 {% endblock %}
 
 {% block beforeContent %}
+
+
 
   {% from 'govuk/components/phase-banner/macro.njk' import govukPhaseBanner %}
 
