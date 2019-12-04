@@ -52,24 +52,11 @@
   {% include "includes/cookie-banner.html" %}
   {# Set serviceName in config.js. #}
   {{ govukHeader({
-    homepageUrl: "join",
+    homepageUrl: "/",
     serviceName: serviceName,
-    serviceUrl: "join",
+    serviceUrl: "/",
     containerClasses: "govuk-width-container",
-    navigation: [
-        {
-          href: "/introduction",
-          text: "Introduction"
-        },
-        {
-          href: "/participants",
-          text: "Participants"
-        },
-        {
-          href: "/join",
-          text: "Join"
-        }
-    ]
+    navigation: []
   }) }}
 
 {% endblock %}

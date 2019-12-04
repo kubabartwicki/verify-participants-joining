@@ -1,0 +1,38 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Join and participate in the trust framework
+      </h1>
+
+      <p>This prototype lets you access 80+ documents that are included in the trust framework. There are two ways of providing feedback on it:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+      <li>directly in the documents</li>
+      <li>using <a href="#">a survey</a></li>
+      </ul>
+
+      <p>We'd like you to read through the documents first and complete the survey afterwards.</p>
+
+      <a href="/{{ url }}/introduction" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+        </svg>
+      </a>
+
+
+    </div>
+</div>
+
+{% endblock %}
