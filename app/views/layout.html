@@ -52,9 +52,9 @@
   {% include "includes/cookie-banner.html" %}
   {# Set serviceName in config.js. #}
   {{ govukHeader({
-    homepageUrl: "introduction",
+    homepageUrl: "join",
     serviceName: serviceName,
-    serviceUrl: "introduction",
+    serviceUrl: "join",
     containerClasses: "govuk-width-container",
     navigation: [
         {
@@ -84,7 +84,7 @@
     tag: {
       text: "Prototype"
     },
-    html: 'This is a not a working service – your feedback can help improve it.'
+    html: 'This is a not a working service – <a href="#">your feedback</a> can help improve it.'
   }) }}
 
 {% endblock %}
