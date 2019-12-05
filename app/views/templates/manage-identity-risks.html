@@ -1,0 +1,37 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Manage identity risks to your service
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  	<a href="/{{ url }}/standards" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-xl">Manage identity risks to your service</h1>
+    <p>You need to know what risks your service might be affected by. These could be risks to:</p>
+
+	<ul class='govuk-list govuk-list--bullet'>
+		<li>your organisation's reputation or finances</li>
+		<li>any information your organisation keeps or collects about your users</li>
+		<li>any property, equipment or resources your organisation owns (these are also known as 'critical assets')</li>
+	</ul>
+	<p>You can control these risks and minimise the impact they'll have on your service and users if you manage your risks.</p>
+	<p>You'll be exposed to a higher level of risk if your organisation creates or works with digital identity accounts. This is because the information you'll be working with is more sensitive and valuable than usual.</p>
+	<p>There are 7 steps involved in managing your risks:</p>
+	<ul class="govuk-list govuk-list--number">
+		<li>Be aware of what context you work in</li>
+		<li>Identify what risks you are or could be exposed to</li>
+		<li>Find out how much impact these risks could have</li>
+		<li>Plan how you will protect yourself against these risks</li>
+		<li>Record these risks in a 'risk register'</li>
+		<li>Communicate these risks with your stakeholders and users</li>
+		<li>Monitor and review the risks</li>
+	</ul>
+  </div>
+
+</div>
+
+{% endblock %}
