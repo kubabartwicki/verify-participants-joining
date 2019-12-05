@@ -17,13 +17,13 @@ function renderPages(companyName, links) {
 // demo
 renderPages('drxik', { 
 	'url' : 'drxik',
-	'variable' : 'value A' 
+	'beingIdentityProvider' : 'https://paper.dropbox.com/doc/Identity-providers-on-the-trust-framework-what-you-must-do-C9LFORoDTa2aQLIByOj0D' 
 }) 
 
 // sitekit
 renderPages('kzhnz', { 
 	'url' : 'kzhnz',
-	'variable' : 'value B' 
+	'beingIdentityProvider' : 'https://blog.gemalto.com/wp-content/uploads/2018/02/digital-id.jpg' 
 }) 
 
 module.exports = router
