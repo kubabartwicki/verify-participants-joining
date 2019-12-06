@@ -14,18 +14,22 @@ function renderPages(companyName, links) {
 	});
 }
 
-// demo
+// demo 
 renderPages('drxik', { 
 	'url' : 'drxik',
 	'beingIdentityProvider' : 'https://paper.dropbox.com/doc/Identity-providers-on-the-trust-framework-what-you-must-do-C9LFORoDTa2aQLIByOj0D',
-	'usingCredentials' : 'https://paper.dropbox.com/doc/Using-credentials-to-protect-an-online-service--Ap7Ckf36cQzXIHkiNSKEfIBpAQ-ysh0jYSD54HULYfFwyQ1P'
-}) 
+	'usingCredentials' : 'https://paper.dropbox.com/doc/Using-credentials-to-protect-an-online-service--Ap7Ckf36cQzXIHkiNSKEfIBpAQ-ysh0jYSD54HULYfFwyQ1P',
+	'rolesAndResponsibilities' : '#',
+	'introduction' : '#'
+})
 
-// sitekit
+// condatis
 renderPages('kzhnz', { 
 	'url' : 'kzhnz',
 	'beingIdentityProvider' : 'https://blog.gemalto.com/wp-content/uploads/2018/02/digital-id.jpg',
-	'usingCredentials' : 'https://paper.dropbox.com/doc/Using-credentials-to-protect-an-online-service--Ap7Ckf36cQzXIHkiNSKEfIBpAQ-ysh0jYSD54HULYfFwyQ1P'
+	'usingCredentials' : 'https://paper.dropbox.com/doc/Using-credentials-to-protect-an-online-service--Ap7Ckf36cQzXIHkiNSKEfIBpAQ-ysh0jYSD54HULYfFwyQ1P',
+	'rolesAndResponsibilities' : '#',
+	'introduction' : '#'
 }) 
 
 module.exports = router
