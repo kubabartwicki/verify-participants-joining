@@ -1,0 +1,54 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Audit a service that wants to join the trust framework
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  	<a href="/{{ url }}/" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-xl">Audit a service that wants to join the trust framework
+</h1>
+    
+    <p>The trust framework is a shared set of rules that makes it possible for companies that provide digital identity services to work with another.</p>
+    <p>Before you can  <a href="/{{ url }}/join">provide your digital identity service</a> on the trust framework, you need to get certified by an independent auditor.</p>
+    <p>If you are an auditor or want to be an auditor, use the links below to download all the documents that will help you assess a digital identity service:</p>
+	 
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="#">Being an auditor: code of ethics</a></li>
+      <li><a href="#">Being an auditor: what you need</a></li>
+      <li><a href="#">Being an auditor: how to do an audit</a></li>
+      <li><a href="#">Being an auditor: writing a compliance report</a></li>
+      <br/>
+      <li><a href="#">Being approved: what you need</a></li>
+      <li><a href="#">Being an auditor: how to send an approval feedback report</a></li>
+      <li><a href="#">Being an auditor: how to send an approval re-validation report</a></li>
+      <br/>
+      <li><a href="#">Being certified: what you need</a></li>
+      <li><a href="#">Being an auditor: how to send a certification feedback report</a></li>
+      <li><a href="#">Being an auditor: how to send a re-certification report</a></li>
+      <br/>
+      <li><a href="#">Being self-assessed: what you need</a></li>
+      <li><a href="#">Being an auditor: how to send a self-assessment report</a></li>
+      <li><a href="#">Being an auditor: how to send a self-assessment re-validation report</a></li>
+      <br/>
+      <li><a href="#">How to assess an audit</a></li>
+      <li><a href="#">How to do an internal audit</a></li>
+      <li><a href="#">Keeping track of audits</a></li>
+      <br/>
+      <li><a href="#">Base profile</a></li>
+      <li><a href="#">Identity provider profile</a></li>
+      <li><a href="#">Attribute provider profile</a></li>
+      <li><a href="#">Broker profile</a></li>
+    </ul>
+    <p><a href="#" class="govuk-button">Download all the documents</a></p>
+    <p><a href="#">Contact the authoritative body</a> if you want to become an auditor.</p>
+
+  </div>
+
+</div>
+
+{% endblock %}
