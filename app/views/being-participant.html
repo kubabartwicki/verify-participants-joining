@@ -1,0 +1,28 @@
+
+
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Who's part of the trust framework
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  	<a href="/join" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-xl">Who's part of the trust framework</h1>
+    <p>All participants in the trust framework must follow the guidance on:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="/reports">Reports, monitoring & auditing</a></li>
+      <li><a href="/threat-intelligence">Threat intelligence and counter fraud guidance</a></li>
+      <li><a href="/threshold">Threshold and alert policy</a></li>
+      <li><a href="/fraud-incident">Report an incident</a></li>
+      <li><a href="/manage-consent">Manage user consent</a></li>
+    </ul>
+  </div>
+
+</div>
+
+{% endblock %}

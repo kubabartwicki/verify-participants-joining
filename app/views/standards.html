@@ -1,0 +1,43 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Standards and rules you must follow
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  	<a href="/join" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-xl">Standards and rules you must follow</h1>
+    <p>You must meet all of the following standards and rules if you want to be part of the trust framework:</p>
+	<ul class="govuk-list govuk-list--bullet">
+    <li><a href="https://www.gov.uk/government/publications/identity-proofing-and-verification-of-an-individual/identity-proofing-and-verification-of-an-individual">Identity proofing and verfication of an individual</a></li>
+    <li><a href="{{ usingCredentials }}">Using credentials to protect an online service (opens in Dropbox Paper)</a></li>
+	  <li><a href="/manage-identity-risks">Manage identity risks to your service</a></li>
+	  <li><a href="/attributes">Understanding, sharing and maintaining attributes</a></li>
+	  <li><a href="/attribute-metadata">How to describe your attributes</a></li>
+	  <li><a href="https://www.gov.uk/government/publications/transaction-monitoring-for-hmg-online-service-providers">Transaction monitoring for HMG online service providers</a></li>
+    <li><a href="/privacy-rules">Privacy rules of the trust framework</a></li>
+    <li><a href="https://www.gov.uk/government/publications/govuk-verify-identity-assurance-principles/identity-assurance-principles">Identity Assurance Principles</a></li>
+	</ul>
+
+  <p>Before you start your application, you’ll need to send some <a href="/evidence">evidence</a> to your auditor that proves you meet some of these standards.</p>
+
+  <p>Depending on what role you want to do in the trust framework, you must also meet any of the following:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="/identity-provider-profile">the identity provider profile</a></li>
+      <li><a href="/attribute-provider-profile">the attribute provider profile</a></li>
+      <li><a href="/broker-profile">the broker profile</a></li>
+    </ul>
+
+  <p>These profiles will help you build your service in a way that follows the standards.</p>
+
+
+
+  </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,111 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Join and participate in the trust framework
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Join and participate in the trust framework</h1>
+
+    <ol class="app-task-list">
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">1.</span> Find out about the trust framework
+        </h2>
+        <p>The trust framework is a shared set of rules that makes it possible for companies that provide digital identity services to work with another.</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="{{ introduction }}">What the trust framework is and how it works (opens in Dropbox Paper)</a></li>
+          <li><a href="/users">Who's part of the trust framework</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">2.</span> Decide if it’s right for you
+        </h2>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="/{{ rolesAndResponsibilities }}">Understanding participants in the trust framework (opens in Dropbox Paper)</a></li>
+          <li><a href="/standards">Standards and rules you must follow</a></li>
+          <li><a href="/governance">How the trust framework is run</a></li>
+          <li><a href="/how-certification-works">How certification works</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">3.</span> Tell us you’re joining
+        </h2>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="/apply">Apply to join the trust framework</a></li>
+          <li><a href="/choose-auditor">Choose an auditor</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">4.</span> Build or adapt your service
+        </h2>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="/set-up-open-id">Set up your OpenID Connect profile</a></li>
+          <li><a href="/check-compliance">Check your technical compliance</a></li>
+          <li><a href="/enrol-directory">Enrolling in the directory</a></li>
+          <li><a href="/set-up-test">Set up a test environment </a></li>
+          <li><a href="/follow-data-specification">Follow the data specification (and trust schema)</a></li>
+          <li><a href="/usability-guidelines">Usability guidelines</a></li>
+        </ul>
+
+
+      </li>
+
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">5.</span> Get certified
+        </h2>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="/certification">Get certified to be part of the trust framework</a></li>
+
+        </ul>
+      </li>
+
+      <li>
+        <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">6.</span> Sign contract and join
+        </h2>
+
+        <p>After you've <a href="/sign-contract">signed the contract</a>, you must:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="/join-directory">join the trust framework directory</a></li>
+          <li><a href="/connect-eidas">connect to eIDAS (if you're a broker)</a></li>
+        </ul>
+
+      </li>
+
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">7.</span> Participate
+        </h2>
+        <p>You must always follow the guidance on <a href="/being-participant">being a participant</a>. There are different rules to follow if you want to be:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="{{ beingIdentityProvider }}">an identity provider (opens in Dropbox Paper)</a></li>
+          <li><a href="/being-attribute-provider">an attribute provider</a></li>
+          <li><a href="/being-broker">a broker</a></li>
+        </ul>
+        <p>There are other things you must do if you want to <a href="/leaving">leave the trust framework</a>.</p>
+
+        </ul>
+
+      </li>
+
+    </ol>
+
+
+
+  </div>
+
+</div>
+
+{% endblock %}
