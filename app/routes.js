@@ -11,6 +11,3 @@ function redirect() {
 redirect()
 
 module.exports = router
-
-// if someone is on 'drxik/' + path
-// take em back to path
