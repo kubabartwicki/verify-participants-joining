@@ -1,0 +1,77 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get certified to be part of the trust framework
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  	<a href="/{{ url }}/join" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-xl">Get certified to be part of the trust framework</h1>
+
+        <p>Your organisation must be 'certified' before you can join the trust framework.</p>
+
+        <p>To be certified, an auditor will need to check that you can provide identity services that meet the <a href="https://www.gov.uk/government/collections/identity-proofing-and-authentication">UK government's identity standards</a>.</p>
+
+        <p>It usually takes between 1 and 3 months to be certified.</p>
+
+      <h2 class="govuk-heading-m">1. Find out how you should be certified</h2>
+
+        <p>There are 3 ways your organisation can be certified. Which one you use will depend on what role you want to do in the trust framework.</p>
+
+        <p>If you want to be broker, you can do most of the audit yourself. This is known as <a href="/{{ url }}/self-assessment">'self-assessment'</a>. You will need to send the auditor your evidence. They will review it and certify your organisation if they think you meet the identity standards.</p>
+
+        <p>If you want to be an identity provider, you will need to be <a href="/{{ url }}/approval">'approved'</a>. You will need to send the auditor your evidence. They will review it and then visit your place of work to make sure you meet the identity standards.</p>
+
+        <p>If you want to be an attribute provider, you will need <a href="/{{ url }}/full-certification">'full certification'</a>. You will need to send the auditor your evidence. They will review it and then visit your place of work to make sure you meet the identity standards. They will make some recommendations and visit your place of work again to check if you've made any changes to your process.</p>
+
+      <h2 class="govuk-heading-m">2. Find out what you need</h2>
+
+        <p>To be certified, your organisation will need to show evidence that it does all of the following:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>is a registered company</li>
+            <li>follows the relevant legislation, for example the General Data Protection Regulation (GDPR)</li>
+            <li>follows an internationally recognised information security standard, such as ISO/IEC 27001, ISO/IEC 27002, NIST 800 Series or ITIL security management</li>
+            <li>manages risks to your service in a way that follows industry standards, such as ISO/IEC 27005 or BS 7799-3</li>
+            <li>has an ISO 9001 certificate (these usually expire every 3 years so you must make sure your certificate is still valid)</li>
+            <li>has someone on the organisation's management team who's responsible for security policies</li>
+            <li>keeps a log of any time your security policies or safeguards have been compromised (the log should include times and dates of the events, as well as what you did to fix them)</li>
+          </ul>
+
+          <p>You might need to prove your organisation follows other standards and rules, depending on which role you want to do in the trust framework.</p>
+
+          <p>You must also:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li><a href="/{{ certified-evidence }}">find out what evidence you need to be certified</a> (includes what information you need to prove you meet each pre-assessment element)</li>
+            <li>read the <a href="/{{ certified-terms-conditions }}">terms and conditions of certification</a> (includes the different types of certification, information about the auditor's report and how to respond to their decision)</li>
+            <li>find out <a href="https://trust-framework-tech-docs.cloudapps.digital/trustmark">when you can and cannot use the trust framework trustmark</a></li>
+          </ul>
+
+      <h2 class="govuk-heading-m">3. Choose an auditor</h2>
+
+        <p>You must <a href="/{{ url }}/list-auditors">choose an auditor</a> from the list. You can do this before or after you've built your service.</p>
+
+      <h2 class="govuk-heading-m">4. Describe your service</h2>
+
+        <p>You'll need to <a href="/{{ brief-service-description }}">write a brief description of your service</a> to help your auditor know if you've chosen the right way to certify your service.
+
+        <p>You'll also need to write a full description of your service that you can send to auditors and the authoritative body. Find out <a href="/{{ full-service-description }}">what you need to include in this description</a>.</p>
+
+      <h2 class="govuk-heading-m">5. Testing your service</h2>
+
+        <p>You need to test your service before it's certified. You should test the design of the service, service transition, service operations, security testing, penetration testing, business continuity, event and capacity management.</p>
+
+      <h2 class="govuk-heading-m">6. Send evidence and information about your service to the auditor</h2>
+
+        <p>You must send all relevant evidence and information about your service to your auditor. This should include a completed <a href="/{{ statement-of-conformity }}">statement of conformity</a>.</p>
+
+  </div>
+
+</div>
+
+{% endblock %}
