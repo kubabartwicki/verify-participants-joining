@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Roles in the IAX scheme
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    {% include 'intro-draft.html' %}
+  	<a href="/join" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-xl">Roles in the IAX scheme</h1>
+
+      <p>Your organisation will need to perform at least one role to be part of the scheme.</p>
+      <p>What your organisation needs to do to join the scheme will depend on which role you choose. If your organisation chooses to perform multiple roles, you must follow the rules for every role it does.</p>
+
+    <h2 class="govuk-heading-m">Buyers</h2>
+
+      <p>Buyers are public or private sector organisations that:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>buy products or services from other organisations in the scheme</li>
+          <li>build services that let users do things online</li>
+        </ul>
+
+      <p>A buyer might need to make sure a user is who they say they are before giving them access to a service. To do this, the buyer might need to pay the identity provider to check and prove a user's identity.</p>
+      <p>A buyer might also need to check if a user is eligible to use their service. They can do this by requesting attributes, or information about attributes, from an attribute provider. The buyer might also need to pay a fee to do this.</p>
+      <p>A buyer must have the user's consent before they pass a user’s details on to an attribute provider.</p>
+
+    <h2 class="govuk-heading-m">Identity providers</h2>
+
+      <p>Identity providers build products and services that let users create digital identities. Once a user has created a digital identity, they'll be able to do things online with any organisation that accepts digital identities from the scheme.</p>
+      <p>Identity providers will also need some information about the user before they can check their identity. An identity provider can:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>ask the user for this information and check it against information held by an attribute provider</li>
+          <li>check any information they already have with an authoritative source (this could be an attribute provider)</li>
+          <li>check if an attribute provider has this information already</li>
+        </ul>
+      <p>Identity providers must have the user's consent before they do this.</p>
+
+    <h2 class="govuk-heading-m">Attribute providers</h2>
+
+      <p>Attribute providers collect or create pieces of information that describe something about a user.</p>
+      <p>If an attribute provider collects an attribute from the user directly, they must check it belongs to the right person.</p>
+      <p>Attribute providers can share their attributes with identity providers and services.</p>
+      <p>Attribute providers must also describe the quality of the attributes they keep. Identity consumers and identity providers will use this information to choose which attribute provider they request attributes from.</p>
+
+    <h2 class="govuk-heading-m">Brokers</h2>
+
+      <p>Brokers connect consumers to identity providers and attribute providers. They also give users a way to choose between identity providers.</p>
+      <p>The broker must make sure it protects users' privacy when their details are passed between a consumer and an identity provider or attribute provider.</p>
+
+    <h2 class="govuk-heading-m">How the roles work together</h2>
+
+      <p>Buyers can connect to a broker if they want to:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>avoid maintaining separate connections to each identity provider in the scheme</li>
+          <li>use an existing component that helps users pick an identity provider, instead of designing and building one</li>
+        </ul>
+
+      <p>The broker can connect the buyer to:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>one or more identity providers, when the service needs a user to create a digital identity</li>
+          <li>all identity providers, when the service needs to let users sign in with their digital identity</li>
+          <li>an attribute provider, if the service needs to request attributes </li>
+        </ul>
+
+      <p>Which broker a buyer chooses depends on:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>how much the broker will charge to get the information they need</li>
+          <li>what type of attribute providers the broker has relationships with</li>
+        </ul>
+
+      <p>Each broker must connect to every identity provider in the scheme. If the identity provider no longer follows the rules of the scheme, they will no longer be trusted by the broker. This might mean the identity provider has to leave the scheme.</p>
+      <p>A broker can choose which attribute providers it connects to. An attribute provider can connect to multiple brokers.</p>
+
+
+  </div>
+
+</div>
+
+{% endblock %}
