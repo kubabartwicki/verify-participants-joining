@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  What you need to join the IAX
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  	<a href="/join" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-xl">What you need to join the IAX</h1>
+    
+     <p>To join the Identity and Attributes Exchange (IAX) as an identity provider you must be certified to show you meet our <a href="/standards">standards and rules</a>.</p>
+
+ <p>Your auditor will ask to see evidence that you can meet our standards and rules.</p>
+
+ <p>To be eligible to join the IAX you need to:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+<li>have built your service</li>
+<li>follow a quality management system, for example ISO 9001 or equivalent</li>
+<li>follow a recognised security standard, for example ISO 27001 or equivalent</li>
+<li>follow data protection rules and regulations, for example GDPR</li>
+<li>follow internationally recognised risk management standards, such as ISO/IEC 31000, ISO/IEC 27005</li>
+<li>carry out internal audits</li>
+<li>keep audit records and security logs - these should include dates and times of any system compromises and what you did to fix them</li> 
+<li>have someone on your management team who's responsible for security policies and systems</li>
+</ul>
+
+ <p>If you meet all of these, you can <a href="/apply">apply to join the IAX<a> as a certified identity provider.</p>
+
+ <p>If you answer no to any of these questions, you may still be able to join the IAX.</p> 
+
+ <p>Equivalent certification standards will be accepted in some cases. <a href="iax@digital.cabinet-office.gov.uk">Contact the IAX auditor for advice.</a></p>
+
+  </div>
+
+</div>
+
+{% endblock %}
